@@ -27,7 +27,6 @@ function anchoPagina(){
 
 }
 
-anchoPagina();
 
 function InicioSesion(){   
     if(window.innerWidth > 850){
