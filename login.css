@@ -1,0 +1,162 @@
+*{
+box-sizing: border-box;
+text-decoration: none;
+font-family: 'Palanquin Dark', sans-serif;
+
+}
+
+body{
+    background-image: url(fondo\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 125, 255, .5) ;
+
+}
+
+.caja__trasera div{
+    margin: 50px 30px;
+    color: aliceblue;
+    transition: all 500ms;
+
+}
+
+.caja__trasera div p,.caja__trasera div button{
+margin-top: 25px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.caja__trasera button{
+padding: 10px 40px;
+border: 3px solid rgb(255, 255, 255);
+background: transparent;
+font-size: 17px;
+font-weight: 680px;
+cursor: pointer;
+color: rgb(249, 249, 249);
+border-radius: 20px;
+
+transition:all 1s;
+
+}
+
+.caja__trasera button:hover{
+
+background: white;
+color: rgba(26, 101, 231, 0.812);
+
+}
+.contenedor__login-registro{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+    top: -180px;
+
+    transition: left 3s cubic-bezier(0.175,0.885,0.320, 1.275) ;
+}
+
+.contenedor__login-registro form{
+    width: 100%;
+    padding: 80px 30px;
+    background: rgba(200, 123, 16, 1);
+    color: white;
+    position: absolute;
+    border-radius: 50px;
+    
+}
+
+.contenedor__login-registro form h3{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contenedor__login-registro form input{
+    width: 100%;
+    margin-top: 15px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 20px;
+    outline: none;
+    border-radius: 5px ;
+}
+
+.contenedor__login-registro form button{
+padding: 18px 30px;
+margin-top: 20px;
+border: none;
+font-size: 20px;
+background: rgb(244, 146, 0);
+color: white;
+cursor: pointer;
+outline: none;
+border-radius: 25px;
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+
+.formulario__registro{
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    main{
+        margin-top: 30px;
+
+    }
+    
+    .caja__trasera{
+        max-width: 300px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0;
+        position: absolute;
+    }
+
+    .contenedor__login-registro{
+        top: -5px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-registro form{
+        position: relative;
+    }
+}
